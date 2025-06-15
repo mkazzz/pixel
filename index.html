@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firmowy Planner Urlopowy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+          },
+          colors: {
+            // Pixel Art Palette
+            'pixel-bg-light': '#E0E0E0', 
+            'pixel-card-light': '#F0F0F0', 
+            'pixel-border-light': '#404040', 
+            'pixel-text-light': '#1C1C1C',   
+            'pixel-text-alt-light': '#606060', 
+
+            'pixel-bg-dark': '#1C1C1C',   
+            'pixel-card-dark': '#282828',  
+            'pixel-border-dark': '#A0A0A0', 
+            'pixel-text-dark': '#E0E0E0',   
+            'pixel-text-alt-dark': '#909090',
+            'pixel-text-on-special-dark': '#F0F0F0', // For text on holiday/weekend in dark mode
+
+            'pixel-primary': { DEFAULT: '#0070F0', hover: '#0050D0' }, 
+            'pixel-secondary': { DEFAULT: '#505050', hover: '#303030' }, 
+            'pixel-danger': { DEFAULT: '#E00000', hover: '#C00000'}, 
+            'pixel-green': '#00A000',
+            'pixel-yellow': '#F0D000',
+            'pixel-orange': '#F08000',
+            'pixel-purple': '#A000F0',
+            'pixel-cyan': '#00A0A0',
+
+            // Vacation Type Colors (Pixel Art Style)
+            'uw': '#0070F0', 
+            'ch': '#E00000', 
+            'ho': '#00A000', 
+            'del': '#F08000',
+            'fw': '#A000F0', 
+            'bl': '#F0D000', 
+            'in': '#808080', 
+
+            // Presence & Status (Pixel Art Style)
+            'present': '#30D030', 
+            'absent': '#F04040', 
+            'weekend-light-bg': '#ECE098', // Changed to match holiday-light-bg
+            'weekend-dark-bg': '#4A4330',  // Changed to match holiday-dark-bg
+            'holiday-light-bg': '#ECE098',
+            'holiday-dark-bg': '#4A4330',
+            
+            'pixel-absent-private-bg-light': '#B0B0B0', 
+            'pixel-absent-private-bg-dark': '#383838',
+            'pixel-absent-private-text-light': '#1C1C1C',
+            'pixel-absent-private-text-dark': '#E0E0E0',
+            
+            'pixel-row-highlight-light': '#D0E0F0', 
+            'pixel-row-highlight-dark': '#2A3A4A',  
+          },
+          boxShadow: { 
+            'pixel-hard': '2px 2px 0px #000000', 
+            'pixel-hard-dark': '2px 2px 0px #505050',
+            'pixel-button-press': 'inset 1px 1px 0px rgba(0,0,0,0.3)',
+            'pixel-button-press-dark': 'inset 1px 1px 0px rgba(0,0,0,0.5)',
+          },
+          borderRadius: {
+            'none': '0px',
+            'sm': '0px', 
+            'md': '0px',
+            'lg': '0px',
+            'xl': '0px',
+            '2xl': '0px',
+            '3xl': '0px',
+            'full': '0px',
+          },
+          borderWidth: {
+            '1': '1px',
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "date-fns/": "https://esm.sh/date-fns@^4.1.0/",
+    "date-fns": "https://esm.sh/date-fns@^4.1.0",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-pixel-bg-light dark:bg-pixel-bg-dark text-pixel-text-light dark:text-pixel-text-dark transition-colors duration-100 font-mono">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
