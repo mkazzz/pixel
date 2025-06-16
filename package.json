@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "pixel",
   "private": true,
   "homepage": "https://mkazzz.github.io/pixel", 
@@ -15,11 +16,29 @@
     "@heroicons/react": "^2.2.0",
     "date-fns": "^4.1.0",
     "react": "^19.1.0",
+=======
+  "name": "firmowy-planner-urlopowy",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "react": "^19.1.0",
+    "@heroicons/react": "^2.2.0",
+>>>>>>> 3c0694f72fef2ade4e72b0b71859f0c3ce6ec8f5
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
+<<<<<<< HEAD
     "gh-pages": "^6.3.0",
+=======
+>>>>>>> 3c0694f72fef2ade4e72b0b71859f0c3ce6ec8f5
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
   }

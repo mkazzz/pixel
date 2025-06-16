@@ -1,6 +1,10 @@
 {
   "name": "Firmowy Planner Urlopowy",
   "description": "Aplikacja webowa do planowania urlopów w firmie, z widokiem kalendarza i matrycy.",
+<<<<<<< HEAD
   "requestFramePermissions": [],
   "prompt": ""
+=======
+  "requestFramePermissions": []
+>>>>>>> 3c0694f72fef2ade4e72b0b71859f0c3ce6ec8f5
 }
